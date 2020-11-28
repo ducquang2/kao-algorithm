@@ -15,5 +15,5 @@ class Solution:
                     min_subarray = subarray
         return min_subarray+1
 
-    
+
 Solution.findShortestSubArray(Solution,[1,2,2,3,1])
