@@ -3,6 +3,8 @@ class Solution:
         finding_dict = {}
         for i, num in enumerate(nums):
             remain = target - num
+
+            # first-way
             if remain not in finding_dict:
                 finding_dict[num] = i
             else:
