@@ -9,5 +9,5 @@ class Solution:
             while new < len(nums):
                 if nums[new - 1] + 1 == nums[new]:
                     if new == len(nums) - 1:
-                        temp.append(f"{nums[l]}->{nums[r]}")
+                        temp.append(f"{nums[curr]}->{nums[new]}")
 
