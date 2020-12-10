@@ -4,10 +4,23 @@ class Solution:
             return [str(nums[0])]
         else:
             temp = []
-            curr = 0
-            new = 1
-            while new < len(nums):
-                if nums[new - 1] + 1 == nums[new]:
-                    if new == len(nums) - 1:
-                        temp.append(f"{nums[curr]}->{nums[new]}")
+            start = 0
+            stop = 1
 
+            while stop < len(nums):
+                if nums[stop - 1] + 1 != nums[stop]:
+                    if stop - 1 == start:
+                        temp.append(str(nums[start]))
+                    else:
+                        temp.append(f"{nums[start]}->{nums[stop-1]}")
+                    if stop == len(nums)-1:
+                        temp.append(f"{nums[stop]}")
+                    start = stop 
+                    stop += 1
+                else:
+                    if stop == len(nums) - 1:
+                        temp.append(f"{nums[start]}->{nums[stop]}")
+                    stop += 1
+            return temp
+
+Solution.summaryRanges(Solution,[0,2,3,4,6,8,9])
