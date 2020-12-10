@@ -1,5 +1,5 @@
 class Solution:
-    def rotatedDigits(self, N)
+    def rotatedDigits(self, N):
         count = 0
         for num in range(1, N + 1):
             s = str(num)
@@ -10,3 +10,4 @@ class Solution:
             
         return count
 
+Solution.rotatedDigits(Solution,1000)
