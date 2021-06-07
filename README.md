@@ -1,3 +1,5 @@
 # kao-algorithm
 
-I'm solving problems from [leetcode](https://leetcode.com/problemset/all/)
+Problems from [leetcode](https://leetcode.com/problemset/all/)
+
+And data structure
